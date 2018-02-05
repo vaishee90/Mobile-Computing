@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign__up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bhuva.store_buddy_group_31.Sign_UP">
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="68dp"
+        android:id="@+id/textName" />
+
+    <TextView
+        android:text="Confirm Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textConfirmPass"
+        android:layout_below="@+id/textPass"
+        android:layout_alignLeft="@+id/textPass"
+        android:layout_alignStart="@+id/textPass" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textEmail"
+        android:layout_below="@+id/textName"
+        android:layout_alignLeft="@+id/textName"
+        android:layout_alignStart="@+id/textName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextName"
+        android:layout_alignBaseline="@+id/textName"
+        android:layout_alignBottom="@+id/textName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/editTextEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/editTextUserId" />
+
+    <TextView
+        android:text="User Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textUserId"
+        android:layout_alignBaseline="@+id/editTextUserId"
+        android:layout_alignBottom="@+id/editTextUserId"
+        android:layout_alignLeft="@+id/textPass"
+        android:layout_alignStart="@+id/textPass" />
+
+    <Button
+        android:text="Sign UP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit_sign_up"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/editTextConfPass"
+        android:layout_toRightOf="@+id/textPass"
+        android:layout_toEndOf="@+id/textPass" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPass"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPass"
+        android:layout_above="@+id/editTextConfPass"
+        android:layout_alignLeft="@+id/textEmail"
+        android:layout_alignStart="@+id/textEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextConfPass"
+        android:layout_below="@+id/editTextPass"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
